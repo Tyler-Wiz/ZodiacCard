@@ -69,13 +69,40 @@ const libra = [
     " During this time, old trauma may resurface, which can be emotionally draining"
 
 ]
+
+const scopio = [
+    "When Chiron goes retrograde, we are asked to process past pain in order to have a happier present and future.",
+    "If your friends start to spill the tea and it stresses you out, just politely excuse yourself.",
+    "Hold onto your happiness. New information does not equal bad information. ",
+    "Use this night to stay in, whether alone or with a lover, to rest and recharge",
+    "If you find out harmless new facts about your lover, such as the fact that they dated someone you hate or have a kink that's new to you, try not to judge them"
+]
+
+const sagittarius = [
+    "Watch out, Sag, Leo likes to party almost as much as you do.",
+    "This transit gives you an opportunity to re-do any relationship missteps you made over the past year.",
+    "You did the best you could at the time; no more secret self-flagellation. ",
+    " If you've been considering a move, it might be time to make it happen, or to look into redecorating and freshening up your current space",
+    " The goal is to get out in the world and enjoy being weird! You have such an adventurous side, Sag, show it off"
+
+]
+
+const capricon = [
+    "You will be more productive at work if you factor in some time for fun.",
+    "You can act indestructible, dear Capricorn, to the point where others forget to ask you how you're doing.",
+    " You have permission to work as hard as you want, just make sure to text your friends and lovers back before you enter your Capricorn work mode. ",
+    " You will be more productive at work if you factor in some time for fun. ",
+    " You can do it, Capricorn! Consider working with a therapist if you aren't already, and make a schedule that allows for work-life balance"
+    
+
+]
+
 const aquarius = [
     "You'll finally be able to forgive yourself and let go of the past.",
     "You typically ooze independence and confidence, Aquarius, but secretly, you may beat yourself up for past mistakes",
     "Remind yourself that no one has a perfect record, especially in matters of love,  In fact, heartbreak is just part of dating",
     "Now that your confidence is up, it's time to leave the house and go have some fun",
     " Go hit the town (while staying safe, of course) because the stars are aligned to provide you with an exceptionally fun night"
-
 
 ]
 const pisces = [
@@ -116,6 +143,9 @@ card.forEach(function(cards){
         five.textContent = displayArray(leo)
         six.textContent = displayArray(virgo)
         seven.textContent = displayArray(libra)
+       eight.textContent = displayArray(scopio)
+        nine.textContent = displayArray(sagittarius)
+        ten.textContent = displayArray(capricon)
         eleven.textContent = displayArray(aquarius)
         twelve.textContent = displayArray(pisces)
       }

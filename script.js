@@ -1,8 +1,10 @@
-const card = document.querySelectorAll("#flip");
-const cardBack = document.querySelectorAll('#back')
-const textBack = document.querySelectorAll('#text-back')
+const card = document.querySelectorAll("#flip"); // get card nodelist
+const cardBack = document.querySelectorAll('#back') 
+const textBack = document.querySelectorAll('#text-back') //get h2 nodelist
 allCards = []
 allBack = []
+
+//Array for all zodiac signs 
 const aries = [
 
     "People are feeling bold and ready to give you what you want as long as you're bold enough to ask for it.",
@@ -67,20 +69,41 @@ const libra = [
     " During this time, old trauma may resurface, which can be emotionally draining"
 
 ]
+const aquarius = [
+    "You'll finally be able to forgive yourself and let go of the past.",
+    "You typically ooze independence and confidence, Aquarius, but secretly, you may beat yourself up for past mistakes",
+    "Remind yourself that no one has a perfect record, especially in matters of love,  In fact, heartbreak is just part of dating",
+    "Now that your confidence is up, it's time to leave the house and go have some fun",
+    " Go hit the town (while staying safe, of course) because the stars are aligned to provide you with an exceptionally fun night"
 
+
+]
+const pisces = [
+    "When joyful Leo season begins on Thursday, July 22, it's time to press pause on what's bothering you and live in the present.",
+    "Check-in with your friends or your therapist, but remember that it's OK to be filled with feelings; you're a Pisces, after all!",
+     "Your loved ones appreciate your emotional depth. ",
+     "You feel revitalized through socialization and are ready to apply that optimism to dating",
+     "You are one of the loveliest signs of the zodiac, and your emotional depth is one of your best qualities"
+]
+
+// holds random content calling in Array 
+//display random horoscope
 function displayArray(rand) {
     return rand[Math.floor(Math.random() * rand.length)]
 }
 
+// loop through the nodelist of h2 and pass to an empty array
 textBack.forEach(back => {
     allBack.push(back) 
 })
 
+//array destruction of pushed array allBack
 const [
     one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve
 ] = allBack
 
-
+//loop through the card nodelist and effect the toggle class. 
+//return displayarray function in each h2 
 card.forEach(function(cards){
     cards.addEventListener('click',function(){
       const isToggled = cards.classList.toggle('is-flipped')
@@ -93,6 +116,8 @@ card.forEach(function(cards){
         five.textContent = displayArray(leo)
         six.textContent = displayArray(virgo)
         seven.textContent = displayArray(libra)
+        eleven.textContent = displayArray(aquarius)
+        twelve.textContent = displayArray(pisces)
       }
     })
 })

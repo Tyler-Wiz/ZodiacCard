@@ -143,7 +143,7 @@ card.forEach(function(cards){
         five.textContent = displayArray(leo)
         six.textContent = displayArray(virgo)
         seven.textContent = displayArray(libra)
-       eight.textContent = displayArray(scopio)
+        eight.textContent = displayArray(scopio)
         nine.textContent = displayArray(sagittarius)
         ten.textContent = displayArray(capricon)
         eleven.textContent = displayArray(aquarius)
@@ -153,6 +153,10 @@ card.forEach(function(cards){
 })
 
 
+switch(isToggled) {
+    case 1:
+    one.textComtent = displayArray(aries)
+}
 
 
 
